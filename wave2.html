@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Opening Animation</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db; /* Set background color */
+    overflow: hidden;
+    position: relative;
+}
+
+body::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff; /* Color of the wave */
+    z-index: -1;
+    transition: 18s;
+}
+
+body:hover::before {
+    height: 100%;
+    animation: none;
+}
+body:hover::after{
+    content: "Welcome to my page";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    background: linear-gradient(to right, red, rgb(0, 255, 225)); /* Gradient color from red to blue */
+   -webkit-background-clip: text; /* Apply gradient as text color for Webkit browsers */
+    color: transparent;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards 5s;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade in the text by changing opacity to 1 */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="opening-wave"></div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "wave.html"; // Redirect to your main portfolio page
+        }, 10000); // Set the duration of the opening animation in milliseconds (e.g., 5000ms for 5 seconds)
+       function onload(){
+         window.location.href= "wave.html";
+        }
+    </script>
+</body>
+
+</html>

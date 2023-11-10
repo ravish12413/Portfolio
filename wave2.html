@@ -36,13 +36,13 @@ body:hover::before {
     animation: none;
 }
 body:hover::after{
-    content: "Welcome to my page";
+    content: "Let's See Inside";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 64px;
-    background: linear-gradient(to right, red, rgb(0, 255, 225)); /* Gradient color from red to blue */
+    background: linear-gradient(to right, #12100E, #2B4162); /* Gradient color from red to blue */
    -webkit-background-clip: text; /* Apply gradient as text color for Webkit browsers */
     color: transparent;
     opacity: 0;
@@ -62,7 +62,7 @@ body:hover::after{
 
     <script>
         setTimeout(function() {
-            window.location.href = "wave.html"; // Redirect to your main portfolio page
+            window.location.href = "main.html"; // Redirect to your main portfolio page
         }, 10000); // Set the duration of the opening animation in milliseconds (e.g., 5000ms for 5 seconds)
        function onload(){
          window.location.href= "wave.html";

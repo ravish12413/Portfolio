@@ -1,71 +1,167 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: linear-gradient(#12100E, #2B4162);
-    color:white
+
+body {
+    color: white;
+    background: linear-gradient(#12100E, #2B4162);
+    font-family: 'Poppins', sans-serif;
 }
 
-#Home{
-    /* border: 1px solid white; */
+
+#home {
+    height: 520px;
     display: flex;
     justify-content: space-around;
+    width: 800px;
+    margin: auto;
+    font-family: 'Edu TAS Beginner', cursive;
 }
 
-#Home .Left{
-/* border: 1px solid white */
+#home .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 34px;
 }
 
-#Home .right{
-    /* border: 1px solid white */
+#roles {
+    text-shadow: 0px 0px 5px #3fb950;
 }
 
-#Home .right img{
+#home .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .right img {
     height: 340px;
 }
-#About{
-    margin-top: 15 px;
-    margin-right: 50px;
-}
-#Academics{
-    margin-top: 15px;
-}
-#Academics .card1{
-    /* border: 2px solid white; */
-}
-#Academics .card2{
-    margin-top: 15px;;
-    /* border: 2px solid white; */
-}
-#Academics .card3{
-    margin-top: 15px;;
-    /* border: 2px solid white; */
-}
-#Skills{
-    margin-top: 15px;
-    /* border: 2px solid white; */
-    display: flex;
-    justify-content: space-between;
+
+
+#about {
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 24px;
+    text-align: justify;
+    width: 20%;
+    margin: auto;
 }
 
-#Project{
-    margin-top: 15px;
-     border: 3px solid white; 
+#about:hover{
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
-#Project .p1{
-    display: flex;
 
+#education {
+    text-align: center;
+    margin: 34px auto;
+    display: flex;
+    flex-direction: column;
 }
-#project .Pname{
-    margin-right: 15px;
-    margin-left: 15px;
+
+#education > div{
+    display: flex;
+    padding: 24px;
+    gap: 14px;
 }
-#project .p1 pdes{
+
+#education > div > div{
+    padding: 14px;
+    width: 33%;
+    border: 1px solid white;
+    border-radius: 6px; 
+}
+
+#education > div > div:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#skills > h1{
+    padding: 14px;
+}
+
+#skills > div {
+    /* border: 1px solid white; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 24px; 
+    justify-content: center;
+    gap: 44px;
+}
+
+#skills > div > div{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    border: 1px solid white;
+    padding: 24px;
+}
+
+#skills > div > div:hover{
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+
+#skills > div > div .rotate{
+    transform: rotate(-45deg);
+}
+
+
+#project {
+    margin: 24px auto;
+    padding: 24px;
+}
+
+#project h1{
+    text-align: center;
+    margin: 12px auto;
+}
+
+#Project > div{
+    display: flex;
+    padding: 24px;
+    gap: 24px;
+}
+
+#project > div > div{
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 50%;
+    padding: 24px;
+}
+
+#project .Pname {
+    font-size: larger;
+}
+
+#project .p1 pdes {
     display: flex;
 }
-#Works{
-    border: 3px solid white;
-    margin-top: 15px;
+
+#Certification {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 24px;
 }
-#Footer{}
+
+#Certification h1{
+    text-align: center;
+    margin: 24px auto;
+}
